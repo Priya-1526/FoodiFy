@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FoodiFy - Like Spotify, but for food!</title>
+  <meta name="title" content="Fasteat - The Best Restaurants In Your Home">
+  <meta name="description" content="This is a food html template made by codewithsadee">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+  <!--- google font link--->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="loading-container" data-loading-container>
+    <div class="loading-circle"></div>
+  </div>
+
+  <!--#HEADER-->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/Foodify.webp" width="148" height="38" alt="FoodiFy home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/Foodify.webp" width="148" height="38" alt="FoodiFy home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#restaurants" class="navbar-link" data-nav-link>Restaurants</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contacts</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-action">
+        <button class="icon-btn signin" aria-label="Sign In">
+  <ion-icon name="person-outline"></ion-icon>
+</button>
+
+        <button class="cart-btn" aria-label="cart">
+          <ion-icon name="bag" aria-hidden="true"></ion-icon>
+          <span class="cart-count">0</span>
+        </button>
+
+      </div>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+  </header>
+
+<!--=============== SignIn Form ===============-->
+<div class="wrapper">
+  <form action="" class="form">
+    <h2>LOG IN</h2>
+    <div class="control">
+      <label for="">Enter Email:</label>
+      <input type="email" placeholder="Enter Your Email" />
+    </div>
+    <div class="control">
+      <label for="">Password:</label>
+      <input type="password" placeholder="Password" />
+    </div>
+    <div class="checkbox d-flex">
+      <input type="checkbox" />
+      <span>Remember Me</span>
+    </div>
+    <button class="btn">Log In</button>
+    <div class="links">
+      <span>Forgot Password? <a href="#">Click Here</a></span>
+      <span>Don't Have An Account? <a href="#">Create One</a></span>
+    </div>
+  </form>
+
+  <div class="close-form">
+    <i class="bx bx-x"></i>
+  </div>
+</div>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.png')">
+        <div class="container" id="home">
+
+          <div class="hero-content" data-reveal="left">
+            <h1 class="h1 hero-title">The Best Restaurants In Your Home</h1>
+
+            <p class="hero-text">
+              Enjoy gourmet meals delivered to your door — comfort and quality combined.
+            </p>
+
+            <a href="#recipes" class="btn btn-secondary has-after">Order Now</a>
+          </div>
+
+          <figure class="hero-banner" data-reveal>
+
+            <img src="./assets/images/hero-banner.png" width="680" height="720" alt="hero banner" class="w-100" >
+
+            <img src="./assets/images/hero-shape-1.svg" width="338" height="138" alt="shape" class="shape shape-1">
+
+
+          </figure>
+
+        </div>
+
+      </section>
+
+
+      <!--=============== Restaurant list ===============-->
+      <section class="restaurant-list" id="restaurants">
+    <h2>Popular Restaurants</h2>
+    <div class="restaurant-Rcards">
+      <div class="Rcard" onclick="location.href='restaurant.html'">
+        <img src="assets/resturant/old rao.jfif" alt="Restaurant 1">
+        <h3>Old Rao</h3>
+        <p>⭐ 4.5 • North Indian • 30 mins</p>
+      </div>
+      <div class="Rcard" onclick="location.href='restaurant.html'">
+        <img src="assets/resturant/ohCafe.jfif" alt="Restaurant 2">
+        <h3>Oh Cafe</h3>
+        <p>⭐ 4.2 • Fast Food • 40 mins</p>
+      </div>
+      <div class="Rcard" onclick="location.href='restaurant.html'">
+        <img src="assets/resturant/Royal.jfif" alt="Restaurant 3">
+        <h3>Royal Bites</h3>
+        <p>⭐ 4.1 • Indian • 25 mins</p>
+      </div>
+      <div class="Rcard" onclick="location.href='restaurant.html'">
+        <img src="assets/resturant/urban.jfif" alt="Restaurant 4">
+        <h3>Urban Bites</h3>
+        <p>⭐ 3.9 • Fast Food • 30 mins</p>
+      </div>
+      <div class="Rcard" onclick="location.href='restaurant.html'">
+        <img src="assets/resturant/okCafe.jfif" alt="Restaurant 5">
+        <h3>Ok Cafe</h3>
+        <p>⭐ 4.0 • Fast Food • 45 mins</p>
+      </div>
+      <div class="Rcard" onclick="location.href='restaurant.html'">
+        <img src="assets/resturant/mannat.jfif" alt="Restaurant 6">
+        <h3>Mannat</h3>
+        <p>⭐ 4.2 • South Indian • 25 mins</p>
+      </div>
+      <div class="Rcard" onclick="location.href='restaurant.html'">
+        <img src="assets/resturant/minicafe.jfif" alt="Restaurant 7">
+        <h3>Mini Cafe</h3>
+        <p>⭐ 4.1 • Fast Food • 45 mins</p>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+    <div class="scroll-dots restaurant-dots"></div>
+  </section>
+
+    <!--=============== Recipes ===============-->
+<section class="section recipes" id="recipes">
+  <h2>Feast Your Eyes, Then Your Belly</h2>
+  <div class="row container">
+    <div class="filters d-flex">
+      <span data-filter="All">All</span>
+      <span data-filter="Beverages">Beverages</span>
+      <span data-filter="Indian">Indian</span>
+      <span data-filter="Desserts">Desserts</span>
+      <span data-filter="Coffee">Coffee</span>
+      <span data-filter="Pizza">Pizza</span>
+      <span data-filter="Burger">Burger</span>
+      <span data-filter="Ice-Cream">Ice cream</span>
+    </div>
+    <div class="products products-wrapper-scroll" id="products-wrapper">
+  <!-- Cards will be injected here -->
+</div>
+
+  </div>
+  <div class="scroll-dots recipes-dots"></div>
+</section>
+
+<!-- Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <span class="close-cart" onclick="cartSidebar.classList.remove('active')">&times;</span>
+  </div>
+
+  <div id="cart-items" class="cart-items"></div>
+
+  <div class="cart-footer">
+    <p>Total: ₹<span id="cart-total">0</span></p>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+</div>
+
+
+
+      <!--=============== About ===============-->
+    <section class="section about" id="about">
+      <div class="row container">
+        <div class="col">
+          <div class="testi-content" data-reveal="left">
+          <img src="./assets/images/service.png" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="testi-content" data-reveal="right">
+          <h2>Take a look at the benefits we offer for you</h2>
+          <p>
+            Good service means a friendly, welcoming service. A restaurant owner
+            should not merely strive to avoid bad service,
+          </p>
+          <div class="d-grid">
+            <div class="card">
+              <img src="./assets/images/car-icon.svg" alt="" />
+              <h4>Free Home Delivary</h4>
+              <span>For all orders over Rs.250</span>
+            </div>
+            <div class="card">
+              <img src="./assets/images/track-ur-order-removebg-preview.png" alt="" " />
+              <h4>Track Your Order</h4>
+              <span>Track status, rider location & ETA</span>
+            </div>
+            <div class="card">
+              <img src="./assets/images/security-icon.svg" alt="" />
+              <h4>Secure Payment</h4>
+              <span>100% Secure Payment</span>
+            </div>
+            <div class="card">
+              <img src="./assets/images/time-icon.svg" alt="" />
+              <h4>Quality Support</h4>
+              <span>Alway Online 24/7</span>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta has-bg-image" aria-labelledby="cta-label"
+        style="background-image: url('./assets/images/hero-bg.png')">
+        <div class="container">
+
+          <figure class="cta-banner" data-reveal="left">
+            <img src="./assets/images/noddles.png" width="680" height="704" loading="lazy" alt="cta banner"
+              class="w-100">
+          </figure>
+
+          <div class="cta-content" data-reveal="right">
+
+            <h2 class="h3 section-title" id="cta-label">
+              Food from your favorite restaurants to your table
+            </h2>
+
+            <p class="section-text">
+              Pretium lectus quam id leo in vitae turpis massa sed. Lorem donec massa sapien faucibus et molestie. Vitae
+              elementum curabitur vitae nunc.
+            </p>
+
+            <a href="#recipes" class="btn btn-primary has-after">Order Now</a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #REVIEW
+      -->
+
+      <section class="section testi" aria-labelledby="testi-label">
+        <div class="container">
+
+          <div class="testi-content" data-reveal="left">
+
+            <h2 class="h2 section-title" id="testi-label">What customers say about us</h2>
+
+            <blockquote class="testi-text">
+              "Absolutely loved the experience! The food was delicious and arrived hot and fresh. Everything was well-packaged and tasted homemade. I’ll definitely be ordering again. Highly recommend!".
+            </blockquote>
+
+            <div class="wrapper">
+              <img src="./assets/images/testi-avatar.jpg" width="70" height="70" loading="lazy" alt="Thomas Adamson"
+                class="author-img">
+
+              <div>
+                <p class="author-title">Thomas Adamson</p>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <figure class="testi-banner" data-reveal="right">
+            <img src="./assets/images/review.png" width="680" height="588" alt="testimonial banner"
+              class="w-100">
+          </figure>
+
+          <h2 class="h3 section-title" style="color: #fb7923;">Service shows good taste.</h2>
+
+        </div>
+      </section>
+
+<!--=============== App ===============-->
+    <section class="section app">
+      <div class="row container">
+        <div class="col">
+          <div class="circle">
+            <div class="inner-circle"></div>
+            <div class="testi-content" data-reveal="top" style="transition: all 0.3s ease;">
+            <img src="./assets/images/mobile.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="testi-content" data-reveal="right">
+          <h2>
+            Never Feel Hungry! Download Our Mobile App Order Delicious Food
+          </h2>
+          <p>
+            Online ordering has enabled many restaurants to manage their peak
+            business hours very effectively.
+          </p>
+          <div class="d-flex">
+            <img src="./assets/images/app-store.png" alt="" />
+            <img src="./assets/images/google-play.png" alt="" />
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- - #NEWSLETTER -->
+
+      <section class="section newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <figure class="newsletter-banner" data-reveal="left">
+            <img src="./assets/images/subscribe.png" width="680" height="405" loading="lazy" alt="Illustration"
+              class="w-100">
+          </figure>
+
+          <div class="newsletter-content" data-reveal="right">
+            <h2 class="h4 section-title">
+              Get the menu of your favorite restaurants every day
+            </h2>
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" placeholder="Enter email address" required class="input-field">
+
+              <button type="submit" class="btn btn-primary has-after">
+                <ion-icon name="notifications-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Subscribe</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="section footer-top grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/Foodify.webp" width="148" height="38" alt="fasteat home">
+          </a>
+
+          <h2 class="h2 section-title">The Best Restaurants in Your Home</h2>
+
+          <p class="section-text">
+            Enjoy restaurant-quality meals from the comfort of your home. From gourmet dinners to cozy comfort food — delivered fresh, fast, and flavorful.
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title h5">Menu</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <span class="span">Home</span>
+
+              <ion-icon aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <span class="span">About Us</span>
+
+              <ion-icon aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <span class="span">Restaurants</span>
+
+              <ion-icon aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <span class="span">Contacts</span>
+
+              <ion-icon aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title h5" id="contact">Contacts</p>
+          </li>
+
+          <li>
+            <a href="mailto:quickeat@mail.net" class="footer-link">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+              <span class="span">foodyfy@mail.net</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:+12344567890" class="footer-link">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+              <span class="span">+1 234 456 78 90</span>
+            </a>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          Copyright 2025 Priya_Jaraut. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- First load product data -->
+<script src="products-data.js"></script>
+
+<!-- Then load main functionality -->
+<script src="script.js" defer></script>
+
+
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
