@@ -28,7 +28,7 @@ const productsData = {
     id: 4,
     title: "Margherita Pizza",
     price: "110.00",
-    url: "./assets/dish/margherit.jpg",
+    url: "./assets/dish/Margherit.jpg",
     category: "Pizza",
     rating: 4
   },
