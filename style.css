@@ -1107,7 +1107,7 @@ body.active { overflow: hidden; }
   gap: 3rem;
 }
 .about .row .col:first-child img {
-  height: 50rem;
+  height: 53rem;
 }
 .about .row .col h2 {
   font-size: 4.5rem;
@@ -1151,7 +1151,8 @@ body.active { overflow: hidden; }
     width: 100%;
   }
   .about .row .col .d-grid {
-    gap: 1rem;
+    gap: 2rem;
+    grid-template-columns: 1fr; /* stack all cards in one column */
   }
   .about .row .col .d-grid .card {
     padding: 1rem;
@@ -1168,7 +1169,21 @@ body.active { overflow: hidden; }
     grid-template-columns: 1fr;
     gap: 3rem 0;
   }
+
+  .about .row .col:first-child img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
+
+.about .row .col:first-child {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+}
+
 
 /*-----------------------------------*\
   #CTA
