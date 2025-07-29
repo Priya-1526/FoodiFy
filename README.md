@@ -18,7 +18,7 @@ FoodiFy is a modern, responsive online food ordering web app where users can bro
 🔐 Login/Signup popup UI (optional)
 
 📸 Demo
-<!-- Replace with your actual screenshot path or link -->
+[click here for live demo](https://priya-1526.github.io/FoodiFy/)
 
 🛠️ Built With
 HTML5
